@@ -1,6 +1,6 @@
 # IN1900 obliger 2024-09-06
 
-Oppgaver (kopiert fra [undervisningsplanen](https://www.uio.no/studier/emner/matnat/ifi/IN1900/h24/ressurser/undervisningsplan.md):
+Oppgaver (kopiert fra [undervisningsplanen](https://www.uio.no/studier/emner/matnat/ifi/IN1900/h24/ressurser/undervisningsplan.md)):
 
 Obligatoriske innleveringsoppgaver (frist 6/9 kl 16.00):
 3.4 (sum_for.py, side 6),
