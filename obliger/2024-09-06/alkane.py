@@ -10,7 +10,7 @@ for i in range(2, 9 + 1):
     print(f"M(C{i}H{i_h}){' ' if i_h < 10 else ''} = ", end="")
     print(f"{i * MASS_C + i_h * MASS_H:7.3f} g/mol")
 
-# Boring solution output:
+# Boring solution stdout:
 # M(C2H6)  =  30.069 g/mol
 # M(C3H8)  =  44.096 g/mol
 # M(C4H10) =  58.123 g/mol
@@ -22,7 +22,7 @@ for i in range(2, 9 + 1):
 
 
 
-# Fun solution
+# # Fun solution
 # def print_alken(n_carbon):
 #     print(f"    ", end="")
 #     for i in range(n_carbon):
@@ -50,7 +50,7 @@ for i in range(2, 9 + 1):
 #     print(f"\n{i * MASS_C + i_h * MASS_H:7.3f} g/mol")
 #     print_alken(i)
 
-#Fun solution output:
+# Fun solution stdout:
 #  30.069 g/mol
 #     H   H
 #     |   |

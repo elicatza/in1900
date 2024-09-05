@@ -33,3 +33,19 @@ for i in range(0, 48 + 1, int(48 / n)):
 print(f"Time\tPopulation")
 for time, count in zip(t, N):
       print(f"{time:4.0f}\t{count:10.0f}")
+
+# stdout:
+# Time    Population
+#    0          5000
+#    4          9913
+#    8         17749
+#   12         27526
+#   16         36580
+#   20         42924
+#   24         46552
+#   28         48390
+#   32         49263
+#   36         49666
+#   40         49849
+#   44         49932
+#   48         49970

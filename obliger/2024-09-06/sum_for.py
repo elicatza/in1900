@@ -10,3 +10,7 @@ for i in range(1, M + 1):  # Generator which yields [1, 2, 3]
     s += 1/(2*i)**2
 
 print(s)
+
+# Solution stdout:
+# 0.3402777777777778
+

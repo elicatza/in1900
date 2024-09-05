@@ -9,3 +9,6 @@ while i <= 3:
     i += 1
 
 print(s)
+
+# Solution stdout:
+# 0.3402777777777778
