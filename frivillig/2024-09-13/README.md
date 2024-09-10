@@ -12,3 +12,9 @@ nettsidene til in1900 i forhold til innlevering at man burde inkludere eksterne
 biblioteker i besvarelsen siden det ikke kommer med basis python, men husker
 ikke hvor jeg fant det. Skal man inkuldere en `requirements.txt`? Kan du
 forklare hva som forventes av eksterne biblioteker / sende lenke.
+
+## Note
+Leverte inn version `fce5106`
+```bash
+git checkout fce5106
+```
