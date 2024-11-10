@@ -9,7 +9,8 @@ du har spørsmål om prosjektet eller hvis du finner trykkfeil eller ting som er
 uklart. Lykke til!
 
 ## N.B.
-Veksler veldig mellom norsk og engelsk. Jeg har kjørt koden med Python 3.12.7.
-Jeg jobbet med oppgaven alene, men kommer til å dele framgangsmåten og koden
-min med andre.
-
+- Veksler veldig ofte mellom norsk og engelsk. Beklager for det.
+- Koden er kjørt med `python3.12.7`.
+- Har jobbet med oppgaven alene, men kommer til å dele framgangsmåten og koden min med andre.
+- Jeg importerer eksterne moduler `numpy`, `matplotlib.pyplot` og `scipy.integrate`
+- Koden er lastet opp til [Github](https://github.com/elicatza/in1900).
