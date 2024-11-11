@@ -25,35 +25,37 @@ def parse_date(datestr):
 class Beta:
     def __init__(self, filename):
 
-        self.betas = []
-        self.times = []
+        betas = []
+        times = []
         with open(filename, 'r') as fp:
             for i, line in enumerate(fp):
                 # Skip the first two lines
                 if i < 2:
                     continue
                 if i == 2:
-                    self.time0 = parse_date(line.split()[0])
+                    time0 = parse_date(line.split()[0])
 
-                self.betas.append(float(line.split()[2]))
-                self.times.append((parse_date(line.split()[0]) - self.time0).days)
+                betas.append(float(line.split()[2]))
+                times.append((parse_date(line.split()[0]) - time0).days)
+
+        # Create lookup table of beta values
+        self.beta_table = []
+        for i in range(len(times) - 1):
+            self.beta_table += (times[i + 1] - times[i]) * [float(betas[i])]
+
+        self.beta_table += [betas[-1]]
+        self.beta_table = np.asarray(self.beta_table)
+
 
     def __call__(self, t):
-        # TODO Could speed up function by making a lookup table O(1)
-        # id = max(int(t), self.times[-1])
-        # return self.betas[id]
-        prev_beta = self.betas[0]
-        for ti, bi in zip(self.times, self.betas):
-            if ti > t:
-                break
-            prev_beta = bi
-
-        return prev_beta
+        # Beta lookup O(1)
+        t = np.asarray(t)
+        t = np.int32(np.minimum(np.trunc(t), len(self.beta_table) - 1))
+        return self.beta_table[t]
 
     def plot(self, T):
         t = np.linspace(0, T, 1000)
-        # TODO: vectorise
-        b = [self(i) for i in t]
+        b = self(t)
         plt.plot(t, b)
         plt.title('model av beta verdier under COVID-19')
         plt.xlabel('Tid [dager]')

@@ -12,5 +12,5 @@ uklart. Lykke til!
 - Veksler veldig ofte mellom norsk og engelsk. Beklager for det.
 - Koden er kjørt med `python3.12.7` i Linux.
 - Har jobbet med oppgaven alene, men kommer til å dele framgangsmåten og koden min med andre.
-- Jeg importerer eksterne moduler `numpy`, `matplotlib.pyplot` og `scipy.integrate`
+- Jeg importerer eksterne moduler: `numpy`, `matplotlib.pyplot` og `scipy.integrate`.
 - Koden er lastet opp til [Github](https://github.com/elicatza/in1900).
